@@ -17,7 +17,7 @@
     // console.log("Search Term: " + searchTerm);
 
     // Build a query URL with a limit of 10 to hit the giphy API with the search term from above
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=dc6zaTOxFJmzC&limit=10";
     // console.log("queryURL: " + queryURL);
 
         // I was trying to clear the entire well every time the function displayGiphyInfo()
