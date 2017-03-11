@@ -16,66 +16,55 @@
 		<h1>Giphy This!</h1>
 	</div>
 
-	<div class="fluid-container text-center">
-		<div class="col-md-2">
-			<p>This is some text.</p>      
-			<p>This is another text.</p> 
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>
+<!-- 
+	Need to populate initial buttons linked to Giphy - check
+	Need to append additional buttons linked to Giphy
+	Need those buttons to return results from Giphy- check
+	And those results should be displayed in the well - check
+	And when you click on an image, it Giphy's
+-->
 
-		</div>  
-		<div id="giphySection" class="col-md-8">
-			<div class="row col-md-12">
-				<button class="btn btn-info btn-lg">First Button</button>	
-				<button class="btn btn-info btn-lg">First Button</button>	
-			</div>
-			<div id="inputRow" class="row col-md-12">
-				<input type="text" name="theInput" id="theInput">
-			</div>
-			<div class="row col-md-12 well well-lg text-left">
-				<div class="row col-md-12">
-					Look at all them giphys
-				</div>
-				<div id="showResults" class="row col-md-12">
-					<button class="btn btn-info btn-lg">First Button</button>	
-					<button class="btn btn-info btn-lg">First Button</button>
-				</div>
-			</div>		
+<!-- Holds everything -->
+<div class="fluid-container">
+
+	<!-- I was going to put images in the left and right column and then decided against it
+	but left them in for spacing and whatnot. -->
+	<div id="leftCol" class="col-md-2 text-center">
+	</div>  
+
+	<!-- This is where the magic happens -->
+	<div id="giphySection" class="col-md-8 text-center">
+		<div id="populateButtons" class="row col-md-12">
+			<!-- Shows initial buttons and then additional buttons submitted -->													
 		</div>
-		<div class="col-md-2"> 
-			<p>This is some other text.</p>      
-			<p>This is another text.</p> 		
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>				
-			<button class="btn btn-info btn-lg">Some Button</button>	
-			<button class="btn btn-info btn-lg">Some Button</button>					
-		</div>   
+
+		<!-- Holds the input field and the submit button -->
+		<div id="inputRow" class="row col-md-12">
+			<input type="text" name="theInput" id="theInput">
+			<input id="submitButton" type="submit" class="btn btn-info" value="Submit Button">
+		</div>
+
+		<!-- This has our well -->
+		<div class="row col-md-12 well well-lg">
+			<div class="row col-md-12">
+				<h3>Look at all them giphys</h3>
+			</div>
+			<div id="showResults" class="row col-md-12 text-center">
+				<!-- This holds all the results from clicking buttons -->
+			</div>
+		</div>		
 	</div>
 
+	<div id="rightCol" class="col-md-2 text-center"> 				
+	</div>   
+</div>
 
 
 
 
-	<!-- Added link to the jQuery Library -->
-	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>	
-	<script src="assets/javascript/giphy.js"></script>
+
+<!-- Added link to the jQuery Library -->
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>	
+<script src="assets/javascript/giphy.js"></script>
 </body>
 </html>
